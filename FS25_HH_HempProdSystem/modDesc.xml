@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="93">
+    <author>Nuggzy</author>
+    <version>1.1.0.0</version>
+<!--=================================================================-->
+    <title>
+        <en>Hemp Production System</en>
+    </title>
+    <iconFilename>hh_HempProdSystem.dds</iconFilename>
+	<multiplayer supported="true"/>
+	<fillTypes filename="xml/filltypes.xml" />	
+<!--=================================================================-->	
+    <storeItems>
+		<storeItem xmlFilename="xml/fast_grainFlourMill.xml"/>
+		<storeItem xmlFilename="xml/farmerKioskSmall.xml"/>
+        <storeItem xmlFilename="xml/hh_GreenHouse.xml"/>
+		<storeItem xmlFilename="xml/hh_Factory.xml"/>
+		<storeItem xmlFilename="xml/hh_TailorShop.xml"/>
+		<storeItem xmlFilename="xml/hh_Bakery.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_hemp.xml"/>		
+		<storeItem xmlFilename="xml/pallet_hh_seeds.xml"/>		
+		<storeItem xmlFilename="xml/pallet_hh_oil.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_bread.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_chocolate.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_cookies.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_cereal.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_fabric.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_paper.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_clothes.xml"/>
+		<storeItem xmlFilename="xml/pallet_hh_brownies.xml"/>
+    </storeItems>
+<!--=================================================================-->
+	<description>
+        <en><![CDATA[Mod Name: Hemp Growing
+Game: Farming Simulator 25
+
+Description:
+Enhance your Farming Simulator 25 experience with the Hemp Growing Mod, designed to add a new and exciting crop to your farm! This mod introduces a fully immersive hemp production system, including a Hemp Pallet, Grow House, and Selling Stand.
+
+Features:
+Hemp Pallet: A specialized pallet for transporting and storing hemp.
+Grow House: A dedicated greenhouse structure designed to cultivate hemp plants efficiently.
+Selling Stand: A unique selling point for hemp products.
+]]>
+		</en>
+        <de><![CDATA[Mod-Name: Hanfanbau
+Spiel: Landwirtschafts-Simulator 25
+
+Beschreibung:
+Verbessern Sie Ihr Landwirtschafts-Simulator 25-Erlebnis mit dem Hanfanbau-Mod, der entwickelt wurde, um Ihrer Farm eine neue und aufregende Nutzpflanze hinzuzufügen! Dieser Mod führt ein vollständig umfassendes Hanfproduktionssystem ein, einschließlich einer Hanfpalette, einem Grow House und einem Verkaufsstand.
+
+Merkmale:
+Hanfpalette: Eine Spezialpalette für den Transport und die Lagerung von Hanf.
+Grow House: Eine spezielle Gewächshausstruktur für den effizienten Anbau von Hanfpflanzen.
+Verkaufsstand: Ein Alleinstellungsmerkmal für Hanfprodukte.
+]]>
+		</de>
+        <fr><![CDATA[Nom du module : Culture de chanvre
+Jeu : Farming Simulator 25
+
+Description:
+Améliorez votre expérience Farming Simulator 25 avec le mod de culture du chanvre, conçu pour ajouter une nouvelle culture passionnante à votre ferme ! Ce mod introduit un système de production de chanvre entièrement immersif, comprenant une palette de chanvre, une maison de culture et un stand de vente.
+
+Caractéristiques:
+Palette de chanvre : Une palette spécialisée pour le transport et le stockage du chanvre.
+Grow House : Une structure de serre dédiée conçue pour cultiver efficacement les plantes de chanvre.
+Stand de vente : Un argument de vente unique pour les produits à base de chanvre.
+]]>
+        </fr>
+	</description>
+	
+	<brands>
+     <!-- <brand name="Allen" title="TBD" image="TBD.dds"/> -->
+    </brands>
+
+    <l10n filenamePrefix="translations/l10n"/>
+</modDesc>
+

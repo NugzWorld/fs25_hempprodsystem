@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+	<fillTypes>
+		<fillType name="HEMP" title="$l10n_fillType_hemp" showOnPriceTable="true" isBulkType="true">
+            <physics massPerLiter="0.3" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="4">
+                <factors>
+                    <factor period="1"  value="1.08" />
+                    <factor period="2"  value="1.12" />
+                    <factor period="3"  value="1.15" />
+                    <factor period="4"  value="1.10" />
+                    <factor period="5"  value="1.05" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.05" />
+                    <factor period="8"  value="1.10" />
+                    <factor period="9"  value="1.15" />
+                    <factor period="10" value="1.20" />
+                    <factor period="11" value="1.15" />
+                    <factor period="12" value="1.10" />
+                </factors>
+            </economy>
+            <!-- <effects prioritizedEffectType="ParticleEffect"/> -->
+            <image      hud     ="textures/icons/hemp.png" />
+            <pallet     filename="xml/pallet_hh_hemp.xml" />
+         </fillType>
+        <fillType name="HEMP_SEEDS" title="$l10n_fillType_hempSeeds" showOnPriceTable="true" >
+            <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="2">
+                <factors>
+                    <factor period="1"  value="0.90" />
+                    <factor period="2"  value="0.97" />
+                    <factor period="3"  value="0.89" />
+                    <factor period="4"  value="0.84" />
+                    <factor period="5"  value="0.75" />
+                    <factor period="6"  value="0.71" />
+                    <factor period="7"  value="0.76" />
+                    <factor period="8"  value="0.89" />
+                    <factor period="9"  value="0.98" />
+                    <factor period="10" value="1.03" />
+                    <factor period="11" value="1.11" />
+                    <factor period="12" value="0.98" />
+                </factors>
+			</economy>
+            <image      hud     ="textures/icons/hh_hemp_seeds.dds" />
+            <pallet     filename="xml/pallet_hh_seeds.xml" />
+        </fillType>
+        <fillType name="HEMP_OIL" title="$l10n_fillType_hempOil" showOnPriceTable="true">
+            <physics massPerLiter="0.9" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.30">
+                <factors>
+                    <factor period="1"  value="0.89" />
+                    <factor period="2"  value="0.95" />
+                    <factor period="3"  value="0.98" />
+                    <factor period="4"  value="1.10" />
+                    <factor period="5"  value="1.00" />
+                    <factor period="6"  value="0.93" />
+                    <factor period="7"  value="0.83" />
+                    <factor period="8"  value="0.77" />
+                    <factor period="9"  value="0.65" />
+                    <factor period="10" value="0.74" />
+                    <factor period="11" value="0.78" />
+                    <factor period="12" value="0.85" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_hemp_oil.dds" />
+            <pallet     filename="xml/pallet_hh_oil.xml" />
+        </fillType>
+        <fillType name="HEMP_SEED_BREAD" title="$l10n_fillType_hempSeedBread" showOnPriceTable="true">
+            <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.40">
+                <factors>
+                    <factor period="1"  value="0.90" />
+                    <factor period="2"  value="0.97" />
+                    <factor period="3"  value="0.89" />
+                    <factor period="4"  value="0.84" />
+                    <factor period="5"  value="0.75" />
+                    <factor period="6"  value="0.71" />
+                    <factor period="7"  value="0.76" />
+                    <factor period="8"  value="0.89" />
+                    <factor period="9"  value="0.98" />
+                    <factor period="10" value="1.03" />
+                    <factor period="11" value="1.11" />
+                    <factor period="12" value="0.98" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_prem_bread.dds" />
+            <pallet     filename="xml/pallet_hh_bread.xml" />
+        </fillType>
+        <fillType name="HEMP_SEED_CEREAL" title="$l10n_fillType_hempSeedCereal" showOnPriceTable="true">
+            <physics massPerLiter="0.6" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.20">
+                <factors>
+                    <factor period="1"  value="1.02" />
+                    <factor period="2"  value="0.98" />
+                    <factor period="3"  value="0.86" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.84" />
+                    <factor period="6"  value="0.92" />
+                    <factor period="7"  value="0.81" />
+                    <factor period="8"  value="0.91" />
+                    <factor period="9"  value="0.87" />
+                    <factor period="10" value="0.90" />
+                    <factor period="11" value="0.93" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_prem_cereal.dds" />
+            <pallet     filename="xml/pallet_hh_cereal.xml" />
+        </fillType>
+        <fillType name="HEMP_FABRIC" title="$l10n_fillType_hempFabric" showOnPriceTable="true">
+            <physics massPerLiter="0.5" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="3.0">
+                <factors>
+                    <factor period="1"  value="1.03" />
+                    <factor period="2"  value="1.15" />
+                    <factor period="3"  value="1.19" />
+                    <factor period="4"  value="1.09" />
+                    <factor period="5"  value="0.89" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.71" />
+                    <factor period="8"  value="0.67" />
+                    <factor period="9"  value="0.75" />
+                    <factor period="10" value="0.85" />
+                    <factor period="11" value="0.83" />
+                    <factor period="12" value="0.87" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_hemp_fabric.dds" />
+            <pallet     filename="xml/pallet_hh_fabric.xml" />
+        </fillType>
+        <fillType name="HEMP_PAPER" title="$l10n_fillType_hempPaper" showOnPriceTable="true">
+            <physics massPerLiter="0.5" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.0">
+                <factors>
+                    <factor period="1"  value="1.03" />
+                    <factor period="2"  value="1.05" />
+                    <factor period="3"  value="1.09" />
+                    <factor period="4"  value="1.09" />
+                    <factor period="5"  value="0.99" />
+                    <factor period="6"  value="0.91" />
+                    <factor period="7"  value="0.91" />
+                    <factor period="8"  value="0.97" />
+                    <factor period="9"  value="0.95" />
+                    <factor period="10" value="0.95" />
+                    <factor period="11" value="0.93" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_prem_paper.dds" />
+            <pallet     filename="xml/pallet_hh_paper.xml" />
+        </fillType>
+        <fillType name="HEMP_CHOCOLATE" title="$l10n_fillType_hempChocolate" showOnPriceTable="true">
+            <physics massPerLiter="0.6" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="4.0">
+                <factors>
+                    <factor period="1"  value="0.89" />
+                    <factor period="2"  value="0.92" />
+                    <factor period="3"  value="0.94" />
+                    <factor period="4"  value="0.98" />
+                    <factor period="5"  value="0.84" />
+                    <factor period="6"  value="0.82" />
+                    <factor period="7"  value="0.85" />
+                    <factor period="8"  value="0.81" />
+                    <factor period="9"  value="0.86" />
+                    <factor period="10" value="0.90" />
+                    <factor period="11" value="0.94" />
+                    <factor period="12" value="0.98" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_prem_chocolate.dds" />
+            <pallet     filename="xml/pallet_hh_chocolate.xml" />
+        </fillType>
+        <fillType name="HEMP_CLOTHES" title="$l10n_fillType_hempClothes" showOnPriceTable="true">
+            <physics massPerLiter="0.5" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="5.0">
+                <factors>
+                    <factor period="1"  value="1.03" />
+                    <factor period="2"  value="1.15" />
+                    <factor period="3"  value="1.19" />
+                    <factor period="4"  value="1.09" />
+                    <factor period="5"  value="0.89" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.71" />
+                    <factor period="8"  value="0.67" />
+                    <factor period="9"  value="0.75" />
+                    <factor period="10" value="0.85" />
+                    <factor period="11" value="0.83" />
+                    <factor period="12" value="0.87" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_hemp_clothes.dds" />
+            <pallet     filename="xml/pallet_hh_clothes.xml" />
+        </fillType>
+        <fillType name="HEMP_COOKIES" title="$l10n_fillType_hempCookies" showOnPriceTable="true">
+            <physics massPerLiter="0.3" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="6.0">
+                <factors>
+                    <factor period="1"  value="1.03" />
+                    <factor period="2"  value="1.15" />
+                    <factor period="3"  value="1.19" />
+                    <factor period="4"  value="1.09" />
+                    <factor period="5"  value="0.89" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.71" />
+                    <factor period="8"  value="0.67" />
+                    <factor period="9"  value="0.75" />
+                    <factor period="10" value="0.85" />
+                    <factor period="11" value="0.83" />
+                    <factor period="12" value="0.87" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_prem_cookies.dds" />
+            <pallet     filename="xml/pallet_hh_cookies.xml" />
+        </fillType>
+        <fillType name="HEMP_BROWNIES" title="$l10n_fillType_hempBrownies" showOnPriceTable="true">
+            <physics massPerLiter="0.4" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="7.0">
+                <factors>
+                    <factor period="1"  value="1.03" />
+                    <factor period="2"  value="1.15" />
+                    <factor period="3"  value="1.19" />
+                    <factor period="4"  value="1.09" />
+                    <factor period="5"  value="0.89" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.71" />
+                    <factor period="8"  value="0.67" />
+                    <factor period="9"  value="0.75" />
+                    <factor period="10" value="0.85" />
+                    <factor period="11" value="0.83" />
+                    <factor period="12" value="0.87" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/icons/hh_prem_brownies.dds" />
+            <pallet     filename="xml/pallet_hh_brownies.xml" />
+			<textures   diffuse ="textures/pallets/hh_prem_brownies_diff.dds" />
+        </fillType>
+
+     </fillTypes>   
+</map>

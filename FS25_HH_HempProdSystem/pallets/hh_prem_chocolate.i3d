@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hh_prem_chocolate.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="../textures/pallets/hh_prem_chocolate_diff.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hh_prem_hem" materialId="51" specularColor="0.501961 1 0">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hh_prem_chocolate.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="hempBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      <TransformGroup name="content" nodeId="29">
+        <Shape name="hemp_c01" scale="0.00999999 0.00999999 0.00999999" shapeId="3" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c01Tension" shapeId="4" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c02" rotation="-0 -180 -0" scale="0.00999999 0.00999999 0.00999999" shapeId="5" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c02Tension" shapeId="6" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c03" scale="0.00999999 0.00999999 0.00999999" shapeId="7" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c03Tension" shapeId="8" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c04" rotation="-0 -180 -0" scale="0.00999999 0.00999999 0.00999999" shapeId="9" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c04Tension" shapeId="10" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c05" scale="0.00999999 0.00999999 0.00999999" shapeId="11" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c05Tension" shapeId="12" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c06" rotation="-0 -180 -0" scale="0.00999999 0.00999999 0.00999999" shapeId="13" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c06Tension" shapeId="14" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c07" scale="0.00999999 0.00999999 0.00999999" shapeId="15" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c07Tension" shapeId="16" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+        <Shape name="hemp_c08" rotation="-0 -180 -0" scale="0.00999999 0.00999999 0.00999999" shapeId="17" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="51">
+          <Shape name="hemp_c08Tension" shapeId="18" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="46">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="19" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="19" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

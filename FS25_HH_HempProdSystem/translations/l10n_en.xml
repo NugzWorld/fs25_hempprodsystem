@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+		<text name="storeItem_fast_grainMill"          		text="Fast Grain Mill"/>		
+		<text name="storeItem_hempBakery"          			text="Hemp Bakery"/>		
+		<text name="storeItem_greenhouseHemp"          		text="Hemp Greenhouse"/>
+		<text name="function_greenhouseHemp"          		text="Production of hemp and hemp seeds."/>
+		<text name="storeItem_hempMarket"          			text="Hempmarket"/>
+		<text name="function_hempMarket"          			text="All hemp products can be sold in the hemp market."/>
+		<text name="storeItem_hempFactory"          		text="Hemp Factory"/>		
+		<text name="function_hempFactory"       			text="Various hemp products are produced in the hemp factory."/>
+		<text name="storeItem_hempTailorShop"          		text="Hemp Tailor Shop"/>		
+		<text name="function_hempTailorShop"       			text="In the hemp tailor shop hemp clothes are made from hemp fabric."/>		
+		<text name="fillType_hemp"       				  	text="Hemp"/>
+		<text name="storeItem_hempPallet"          			text="Hemp pallet"/>
+		<text name="fillType_hempSeeds"       				text="Hemp Seeds"/>
+		<text name="storeItem_hempSeedPallet"          		text="Hemp seeds pallet"/>	
+		<text name="fillType_hempSeedBread"       			text="Hemp Seed Bread"/>
+		<text name="storeItem_hempSeedBreadPallet"          text="Hemp seed bread pallet"/>
+		<text name="fillType_hempOil"       				text="Hemp Oil"/>
+		<text name="storeItem_hempOilPallet"          		text="Hemp oil pallet"/>	
+		<text name="fillType_hempSeedCereal"       			text="Hemp Seed Cereal"/>
+		<text name="storeItem_hempSeedCerealsPallet"        text="Hemp seed cerial pallet"/>
+		<text name="fillType_hempFabric"       				text="Hemp Fabric"/>
+		<text name="storeItem_hempFabricsPallet"        	text="Hemp fabric pallet"/>
+		<text name="fillType_hempClothes"       			text="Hemp Clothes"/>
+		<text name="storeItem_hempClothesPallet"        	text="Hemp clothes pallet"/>
+		<text name="fillType_hempChocolate"       			text="Hemp Chocolate"/>
+		<text name="storeItem_hempChocolatePallet"        	text="Hemp chocolate pallet"/>	
+		<text name="fillType_hempCookies"       			text="Hemp Cookies"/>
+		<text name="storeItem_hempCookiesPallet"        	text="Hemp cookies pallet"/>	
+		<text name="fillType_hempBrownies"       			text="Hemp Brownies"/>
+		<text name="storeItem_hempBrowniesPallet"        	text="Hemp brownies pallet"/>	
+		<text name="fillType_hempPaper"       				text="Hemp Paper"/>
+		<text name="storeItem_hempPaperPallet"        		text="Hemp paper pallet"/>
+		<text name="fillType_hempEnergyDrink"       		text="Hemp Energy Drink"/>
+		<text name="storeItem_hempEnergyDrinkPallet"        text="Hemp energy drink pallet"/>		
+	</texts>
+</l10n>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+		<text name="storeItem_hempBakery"          			text="Hanf Bäckerei"/>		
+		<text name="storeItem_greenhouseHemp"          		text="Hanf Gewächshaus"/>
+		<text name="function_greenhouseHemp"          		text="Herstellung von Hanf und Hanfsamen."/>
+		<text name="storeItem_hempMarket"          			text="Hanfmarkt"/>
+		<text name="function_hempMarket"          			text="In dem Hanfmarkt können alle Hanfprodukte verkauft werden."/>
+		<text name="storeItem_hempFactory"          		text="Hanffabrik"/>		
+		<text name="function_hempFactory"       			text="In der Hanffabrik werden verschiedene Hanfprodukte hergestellt."/>
+		<text name="storeItem_hempTailorShop"          		text="Hanfschneiderei"/>		
+		<text name="function_hempTailorShop"       			text="In der Hanfschneiderei wird Hanfkleidung aus Hanfstoff hergestellt."/>	
+		<text name="fillType_hemp"       				  	text="Hanf"/>
+		<text name="storeItem_hempPallet"          			text="Hanf Palette"/>
+		<text name="fillType_hempSeeds"       				text="Hanfsamen"/>
+		<text name="storeItem_hempSeedPallet"          		text="Hanfsamen Palette"/>
+		<text name="fillType_hempSeedBread"         	 	text="Hanfsamenbrot"/>
+		<text name="storeItem_hempSeedBreadPallet"          text="Hanfsamenbrot Palette"/>
+		<text name="fillType_hempOil"       				text="Hanföl"/>
+		<text name="storeItem_hempOilPallet"          		text="Hanföl Palette"/>	
+		<text name="fillType_hempSeedCereal"       			text="Hanfsamenmüsli"/>
+		<text name="storeItem_hempSeedCerealsPallet"        text="Hanfsamenmüsli Palette"/>
+		<text name="fillType_hempFabric"       				text="Hanfstoff"/>
+		<text name="storeItem_hempFabricsPallet"        	text="Hanfstoff Palette"/>		
+		<text name="fillType_hempClothes"       			text="Hanfkleidung"/>
+		<text name="storeItem_hempClothesPallet"        	text="Hanfkleidung Palette"/>	
+		<text name="fillType_hempChocolate"       			text="Hanfschokolade"/>
+		<text name="storeItem_hempChocolatePallet"        	text="Hanfschokolade Palette"/>
+		<text name="fillType_hempCookies"       			text="Hanf Kekse"/>
+		<text name="storeItem_hempCookiesPallet"        	text="Hanf Kekse Palette"/>	
+		<text name="fillType_hempPaper"       				text="Hanfpapier"/>
+		<text name="storeItem_hempPaperPallet"        		text="Hanfpapier Palette"/>
+		<text name="fillType_hempEnergyDrink"       		text="Hanf Energydrink"/>
+		<text name="storeItem_hempEnergyDrinkPallet"        text="Hanf Energydrink Palette"/>
+	</texts>
+</l10n>

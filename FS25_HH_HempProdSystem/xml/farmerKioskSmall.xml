@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Hemp Station</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>$data/placeables/brandless/farmerKioskSmall/store_farmerKioskSmall.png</image>
+        <price>0</price>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>sellingPoints</tab>
+        </brush>
+        <vertexBufferMemoryUsage>232192</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>66304</indexBufferMemoryUsage>
+        <textureMemoryUsage>1835008</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/farmerKioskSmall.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <sellingStation appearsOnStats="true" litersForFullPriceDrop="200000" fullPriceRecoverHours="48" supportsExtension="false">
+        <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="unloadTrigger" fillTypes="HEMP HEMP_SEEDS HEMP_PAPER HEMP_FABRIC HEMP_SEED_CEREAL HEMP_SEED_BREAD HEMP_OIL HEMP_CHOCOLATE HEMP_COOKIES HEMP_BROWNIES HEMP_CLOTHES"/>
+        <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="HEMP HEMP_SEEDS HEMP_PAPER HEMP_FABRIC HEMP_SEED_CEREAL HEMP_SEED_BREAD HEMP_OIL HEMP_CHOCOLATE HEMP_COOKIES HEMP_BROWNIES HEMP_CLOTHES"/>
+       
+        <fillType name="hemp"                   priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_seeds"             priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_oil"               priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_seed_bread"        priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_seed_cereal"       priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_fabric"            priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_paper"             priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_chocolate"         priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_cookies"           priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_brownies"          priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="hemp_clothes"           priceScale="1.0" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="warningStripes01"/>
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="paintAreaStart01" node="0>2|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>3|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>4|0" />
+        <i3dMapping id="testAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="warningStripes01" node="0>6|0" />
+        <i3dMapping id="sellingStation" node="0>7" />
+        <i3dMapping id="exactFillRootNode" node="0>7|0|0" />
+		<i3dMapping id="unloadTrigger" node="0>7|0" />
+        <i3dMapping id="palletTrigger" node="0>7|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>7|2" />
+        <i3dMapping id="unloadTriggerAINode" node="0>7|3" />
+        <i3dMapping id="fillplane_springOnion" node="0>8|1|0|0" />
+        <i3dMapping id="fillplane_spinach" node="0>8|1|0|1" />
+        <i3dMapping id="fillplane_riceLongGrain" node="0>8|1|0|2" />
+        <i3dMapping id="fillplane_enoki" node="0>8|1|0|3" />
+        <i3dMapping id="fillplane_strawberry" node="0>8|1|0|4" />
+        <i3dMapping id="fillplane_olive" node="0>8|1|0|5" />
+        <i3dMapping id="fillplane_tomato" node="0>8|1|0|6" />
+        <i3dMapping id="fillplane_chilli" node="0>8|1|0|7" />
+        <i3dMapping id="fillplane_rice" node="0>8|1|0|8" />
+        <i3dMapping id="fillplane_parsnip" node="0>8|1|0|9" />
+        <i3dMapping id="fillplane_oyster" node="0>8|1|0|10" />
+        <i3dMapping id="fillplane_grape" node="0>8|1|0|11" />
+        <i3dMapping id="fillplane_potato" node="0>8|1|0|12" />
+        <i3dMapping id="fillplane_carrot" node="0>8|1|0|13" />
+    </i3dMappings>
+</placeable>

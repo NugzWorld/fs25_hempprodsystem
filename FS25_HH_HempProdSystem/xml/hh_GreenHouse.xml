@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_greenHouseGlassLarge</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>textures/icons/greenHouseGlassLarge.dds</image>
+        <price>14999</price>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>Happy Harvests</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>greenhouses</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>888576</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>176640</indexBufferMemoryUsage>
+        <textureMemoryUsage>1179648</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/greenHouseGlassLarge.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea01Start" widthNode="indoorAreaWidth01" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d"  adjustToGround="true" />
+		<triggerMarker node="unloadTriggerMarker1" filename="$data/shared/assets/marker/markerIconUnload.i3d"  adjustToGround="true" />
+    </triggerMarkers>
+
+    <greenhouse>
+        <plants>
+			<plant fillType="HEMP"         xmlFilename="xml/hemp.xml" />			
+        </plants>
+
+        <plantSpaces>
+            <spacesParent node="plantNodes" useRandomYRot="true" />			
+        </plantSpaces>
+
+        <sounds>
+            <watering template="defaultSprayer" linkNode="0>" loops="0" />
+        </sounds>
+    </greenhouse>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+			<production id="hemp" name="$l10n_fillType_hemp" cyclesPerHour="6" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+                    <input fillType="FERTILIZER" amount="3" mix="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="HEMP" amount="20" />
+                </outputs>
+            </production>
+			<production id="hemp_seeds" name="$l10n_fillType_hempSeeds" cyclesPerHour="6" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+                    <input fillType="FERTILIZER" amount="3" mix="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="HEMP_SEEDS" amount="20" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="WATER FERTILIZER" aiNode="unloadTriggerAINode"/>
+			<palletTrigger triggerNode="palletTrigger" fillTypes="FERTILIZER"/>
+        </sellingStation>
+
+        <loadingStation fillTypes="WATER FERTILIZER HEMP HEMP_SEEDS" supportsExtension="true" />
+				
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="spawnPlaceStart01" endNode="spawnPlaceEnd01" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage node="storage" isExtension="false" fillTypes="WATER FERTILIZER" fillLevelSyncThreshold="10" >
+            <capacity fillType="WATER"        capacity="50000" />
+			<capacity fillType="FERTILIZER"   capacity="50000" />
+			<capacity fillType="HEMP"         capacity="35000" />
+			<capacity fillType="HEMP_SEEDS"   capacity="35000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <animatedObjects>
+        <animatedObject saveId="door1" >
+            <animation duration="3">
+                <part node="door1RightOpener">
+                    <keyFrame time="0.00" rotation="0 0 0"/>
+                    <keyFrame time="0.25" rotation="0 0 -25"/>
+                    <keyFrame time="0.75" rotation="0 0 0"/>
+                </part>
+                <part node="door1Left">
+                    <keyFrame time="0.50" rotation="0 0 0"/>
+                    <keyFrame time="1.50" rotation="0 -100 0"/>
+                </part>
+                <part node="door1Right">
+                    <keyFrame time="0.25" rotation="0 0 0"/>
+                    <keyFrame time="1.25" rotation="0 100 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door1" template="glassDoorLoop" />
+                <negEnd linkNode="door1" template="metalDoorsClose" />
+                <posEnd linkNode="door1" template="metalDoorsOpen" />
+            </sounds>
+        </animatedObject>
+    <animatedObject saveId="door2" >
+            <animation duration="3">
+                <part node="door2RightOpener">
+                    <keyFrame time="0.00" rotation="0 0 0"/>
+                    <keyFrame time="0.25" rotation="0 0 -25"/>
+                    <keyFrame time="0.75" rotation="0 0 0"/>
+                </part>
+                <part node="door2Left">
+                    <keyFrame time="0.50" rotation="0 0 0"/>
+                    <keyFrame time="1.50" rotation="0 -100 0"/>
+                </part>
+                <part node="door2Right">
+                    <keyFrame time="0.25" rotation="0 0 0"/>
+                    <keyFrame time="1.25" rotation="0 100 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door2" template="glassDoorLoop" />
+                <negEnd linkNode="door2" template="metalDoorsClose" />
+                <posEnd linkNode="door2" template="metalDoorsOpen" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+		
+		<i3dMapping id="palletTrigger" node="0>5|4|3" />	
+		<i3dMapping id="plantNodes" node="0>5|1" />		
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorArea01Start" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />       
+        <i3dMapping id="palletSpawner" node="0>5|3" />
+        <i3dMapping id="spawnPlaceStart01" node="0>5|3|0" />
+        <i3dMapping id="spawnPlaceEnd01" node="0>5|3|0|0" />
+        <i3dMapping id="sellingStation" node="0>5|4" />
+        <i3dMapping id="exactFillRootNode" node="0>5|4|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|4|1" />
+		<i3dMapping id="unloadTriggerMarker1" node="0>5|4|4" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|4|2" />
+        <i3dMapping id="storage" node="0>5|5" />
+        <i3dMapping id="playerTrigger" node="0>5|6" />
+        <i3dMapping id="playerTriggerMarker" node="0>5|7" />
+        <i3dMapping id="teleportNode" node="0>5|8" />
+        <i3dMapping id="door1" node="0>6|0" />
+        <i3dMapping id="door1Left" node="0>6|0|0" />
+        <i3dMapping id="door1Right" node="0>6|0|1" />
+        <i3dMapping id="door1RightOpener" node="0>6|0|1|0|0|0" />
+        <i3dMapping id="door1Trigger" node="0>6|0|2" />
+        <i3dMapping id="door2" node="0>6|1" />
+        <i3dMapping id="door2Left" node="0>6|1|0" />
+        <i3dMapping id="door2Right" node="0>6|1|1" />
+        <i3dMapping id="door2RightOpener" node="0>6|1|1|0|0|0" />
+        <i3dMapping id="door2Trigger" node="0>6|1|2" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="warningStripes" node="0>8" />
+    </i3dMappings>
+</placeable>
