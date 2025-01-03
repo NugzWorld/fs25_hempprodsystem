@@ -31,46 +31,53 @@
     </storeItems>
 <!--=================================================================-->
 	<description>
-        <en><![CDATA[Mod Name: Hemp Growing
+        <en><![CDATA[Mod Name: Hemp Production System
 Game: Farming Simulator 25
 
 Description:
-Enhance your Farming Simulator 25 experience with the Hemp Growing Mod, designed to add a new and exciting crop to your farm! This mod introduces a fully immersive hemp production system, including a Hemp Pallet, Grow House, and Selling Stand.
+The Hemp Production system is a comprehensive system designed around the growing and production of hemp and hemp related products. 
 
 Features:
-Hemp Pallet: A specialized pallet for transporting and storing hemp.
-Grow House: A dedicated greenhouse structure designed to cultivate hemp plants efficiently.
-Selling Stand: A unique selling point for hemp products.
+1. Green House  - Input: Water & Fertilizer.
+                  Output: Hemp & Hemp Seeds.
+
+2. Hemp Factory - Input: Hemp, Hemp Seeds, Water, Bottled Goat Milk, Flour, Honey & Oats.
+                  Output: Hemp Oil, Hemp Fabric, Hemp Paper, Hemp Chocolate & Hemp Seed Cereal
+
+3. Hemp Bakery  - Input: Hemp, Hemp Seeds, Hemp Choclate, Flour, Oats, Honey & Bottled Goat Milk. 
+                  Output: Hemp Seed Bread, Hemp Cookies & Hemp Brownies.
+
+4. Hemp Tailor  - Input: Hemp Cloth.
+                  Output: Hemp Clothes
+
+All items are palletized for easy transport and sale at the included hemp selling stand.
 ]]>
 		</en>
-        <de><![CDATA[Mod-Name: Hanfanbau
+        <de><![CDATA[Mod-Name: Hanfproduktionssystem
 Spiel: Landwirtschafts-Simulator 25
 
 Beschreibung:
-Verbessern Sie Ihr Landwirtschafts-Simulator 25-Erlebnis mit dem Hanfanbau-Mod, der entwickelt wurde, um Ihrer Farm eine neue und aufregende Nutzpflanze hinzuzufügen! Dieser Mod führt ein vollständig umfassendes Hanfproduktionssystem ein, einschließlich einer Hanfpalette, einem Grow House und einem Verkaufsstand.
+Das Hanfproduktionssystem ist ein umfassendes System, das auf den Anbau und die Produktion von Hanf und Hanfprodukten ausgerichtet ist.
 
-Merkmale:
-Hanfpalette: Eine Spezialpalette für den Transport und die Lagerung von Hanf.
-Grow House: Eine spezielle Gewächshausstruktur für den effizienten Anbau von Hanfpflanzen.
-Verkaufsstand: Ein Alleinstellungsmerkmal für Hanfprodukte.
-]]>
+Funktionen:
+1. Gewächshaus – Input: Wasser und Dünger.
+                 Output: Hanf und Hanfsamen.
+
+2. Hanffabrik – Input: Hanf, Hanfsamen, Wasser, abgefüllte Ziegenmilch, Mehl, Honig und Hafer.
+                Output: Hanföl, Hanfgewebe, Hanfpapier, Hanfschokolade und Hanfsamenmüsli
+
+3. Hanfbäckerei – Input: Hanf, Hanfsamen, Hanfschokolade, Mehl, Hafer, Honig und abgefüllte Ziegenmilch.
+                  Output: Hanfsamenbrot, Hanfkekse und Hanfbrownies.
+
+4. Hanfschneider – Input: Hanfstoff.
+                   Output: Hanfkleidung
+
+Alle Artikel sind für den einfachen Transport und Verkauf am enthaltenen Hanfverkaufsstand auf Paletten verpackt.]]>
 		</de>
-        <fr><![CDATA[Nom du module : Culture de chanvre
-Jeu : Farming Simulator 25
-
-Description:
-Améliorez votre expérience Farming Simulator 25 avec le mod de culture du chanvre, conçu pour ajouter une nouvelle culture passionnante à votre ferme ! Ce mod introduit un système de production de chanvre entièrement immersif, comprenant une palette de chanvre, une maison de culture et un stand de vente.
-
-Caractéristiques:
-Palette de chanvre : Une palette spécialisée pour le transport et le stockage du chanvre.
-Grow House : Une structure de serre dédiée conçue pour cultiver efficacement les plantes de chanvre.
-Stand de vente : Un argument de vente unique pour les produits à base de chanvre.
-]]>
-        </fr>
 	</description>
 	
 	<brands>
-     <!-- <brand name="Allen" title="TBD" image="TBD.dds"/> -->
+     <!-- <brand name="NugzWorld" title="TBD" image="TBD.dds"/> -->
     </brands>
 
     <l10n filenamePrefix="translations/l10n"/>

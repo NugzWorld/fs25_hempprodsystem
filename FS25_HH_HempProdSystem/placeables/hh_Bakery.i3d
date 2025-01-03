@@ -171,7 +171,12 @@
       <Normalmap fileId="45" bumpDepth="0.5"/>
       <Glossmap fileId="24"/>
     </Material>
-    <Material name="warningStripes_mat" materialId="167">
+    <Material name="warningStripes_mat" materialId="24">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="169">
       <Texture fileId="11"/>
       <Normalmap fileId="12"/>
       <Glossmap fileId="13"/>
@@ -263,66 +268,71 @@
         <Shape name="palletTrigger" translation="-3.2 2.15747 -4.095" shapeId="6" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="107" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
         <TransformGroup name="unloadTriggerMarker" translation="-3.2 0 -4.095" nodeId="108"/>
         <TransformGroup name="unloadTriggerAINode" translation="-3.2 0 -4.095" rotation="0 90 0" nodeId="109"/>
+        <TransformGroup name="loadingStation" translation="0.453838 0.030026 6.21203" rotation="-0 -90 0" nodeId="161">
+          <Shape name="warningStripes03" translation="2.94006 0 3.5546" rotation="0 90 0" shapeId="7" clipDistance="100" nodeId="162" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="169"/>
+          <Shape name="loadTrigger" translation="2.94006 2.02859 3.5546" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="164" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+          <TransformGroup name="dischargeNode" translation="2.94006 5 3.5546" nodeId="165"/>
+        </TransformGroup>
       </TransformGroup>
       <TransformGroup name="productionPoint" nodeId="110">
-        <Shape name="playerTrigger" translation="1.5 1 7" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+        <Shape name="playerTrigger" translation="1.5 1 7" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
         <TransformGroup name="playerTriggerMarker" translation="1.5 0 7" nodeId="112"/>
       </TransformGroup>
       <TransformGroup name="warningStripes" nodeId="113">
-        <TransformGroup name="triggerMarkerSet" translation="0 0.001 0" nodeId="160">
-          <Shape name="warningStripesCorner1" translation="-2.69374 5.26767e-07 10.7303" rotation="180 -0 180" scale="0.5 0.5 0.5" shapeId="8" clipDistance="200" nodeId="161" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="167"/>
-          <Shape name="warningStripesCorner2" translation="-2.69463 5.61369e-07 7.44259" scale="0.5 0.5 0.5" shapeId="9" clipDistance="200" nodeId="162" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="167"/>
-          <Shape name="warningStripesCorner3" translation="5.58253 4.80636e-07 7.4194" scale="0.5 0.5 0.5" shapeId="8" clipDistance="200" nodeId="163" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="167"/>
-          <Shape name="warningStripesCorner4" translation="5.59675 4.46035e-07 10.7388" rotation="180 -5.00896e-06 180" scale="0.5 0.5 0.5" shapeId="9" clipDistance="200" nodeId="164" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="167"/>
+        <TransformGroup name="triggerMarkerSet" translation="0 0.001 0" nodeId="114">
+          <Shape name="warningStripesCorner1" translation="-2.69374 5.26767e-07 10.7303" rotation="180 -0 180" scale="0.5 0.5 0.5" shapeId="10" clipDistance="200" nodeId="115" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="24"/>
+          <Shape name="warningStripesCorner2" translation="-2.69463 5.61369e-07 7.44259" scale="0.5 0.5 0.5" shapeId="11" clipDistance="200" nodeId="116" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="24"/>
+          <Shape name="warningStripesCorner3" translation="5.58253 4.80636e-07 7.4194" scale="0.5 0.5 0.5" shapeId="10" clipDistance="200" nodeId="117" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="24"/>
+          <Shape name="warningStripesCorner4" translation="5.59675 4.46035e-07 10.7388" rotation="180 -5.00896e-06 180" scale="0.5 0.5 0.5" shapeId="11" clipDistance="200" nodeId="118" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="24"/>
         </TransformGroup>
-        <Shape name="warningStripes02" translation="-4.16096 0.01 3.27158" rotation="0 90 0" shapeId="10" clipDistance="200" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="25"/>
+        <Shape name="warningStripes02" translation="-4.16096 0.01 3.27158" rotation="0 90 0" shapeId="12" clipDistance="200" nodeId="119" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="25"/>
       </TransformGroup>
-      <TransformGroup name="palletSpawner" rotation="0 90 0" nodeId="119">
-        <TransformGroup name="palletAreaStart01" translation="-8.1 0 -2.2" nodeId="120">
-          <TransformGroup name="palletAreaEnd01" translation="0 0 7.5" nodeId="121"/>
+      <TransformGroup name="palletSpawner" rotation="0 90 0" nodeId="120">
+        <TransformGroup name="palletAreaStart01" translation="-8.1 0 -2.2" nodeId="121">
+          <TransformGroup name="palletAreaEnd01" translation="0 0 7.5" nodeId="122"/>
         </TransformGroup>
-        <TransformGroup name="palletAreaStart02" translation="-9.6 0 -2.2" nodeId="122">
-          <TransformGroup name="palletAreaEnd02" translation="0 0 7.5" nodeId="123"/>
+        <TransformGroup name="palletAreaStart02" translation="-9.6 0 -2.2" nodeId="123">
+          <TransformGroup name="palletAreaEnd02" translation="0 0 7.5" nodeId="124"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="visuals" nodeId="124">
-        <TransformGroup name="LOD0" nodeId="125">
-          <Shape name="vis" translation="-0.020873 3.22969 -0.027201" shapeId="11" clipDistance="300" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="5">
-            <Shape name="bricksDetails" translation="-0.248754 -0.153557 0.078321" shapeId="12" clipDistance="75" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="5"/>
-            <Shape name="detailsBricks" translation="-2.01441 -1.63016 -3.56673" shapeId="13" clipDistance="75" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="5"/>
-            <Shape name="eaves" translation="-2.10066 -2.24187 -3.59899" shapeId="14" clipDistance="300" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="20"/>
-            <Shape name="glas" translation="-1e-06 -0.765864 -0.458391" shapeId="15" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="26"/>
-            <Shape name="frames" translation="0.020873 -3.22969 0.027201" shapeId="16" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="15"/>
-            <Shape name="curtains" translation="-0.008783 -0.647147 -0.460274" shapeId="17" clipDistance="75" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="13"/>
-            <Shape name="sign" translation="0.020873 -3.22969 0.027201" shapeId="18" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="22"/>
-            <TransformGroup name="seasons" nodeId="134">
-              <TransformGroup name="winter" nodeId="135">
-                <Shape name="snow" translation="-0.243773 1.44108 0.097794" shapeId="19" clipDistance="300" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="23" weatherRequiredMask="0x400"/>
-                <Shape name="icicles" translation="-0.255484 -0.6886 0.041122" shapeId="20" clipDistance="75" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="16" weatherRequiredMask="0x400"/>
+      <TransformGroup name="visuals" nodeId="125">
+        <TransformGroup name="LOD0" nodeId="126">
+          <Shape name="vis" translation="-0.020873 3.22969 -0.027201" shapeId="13" clipDistance="300" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="bricksDetails" translation="-0.248754 -0.153557 0.078321" shapeId="14" clipDistance="75" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="detailsBricks" translation="-2.01441 -1.63016 -3.56673" shapeId="15" clipDistance="75" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="eaves" translation="-2.10066 -2.24187 -3.59899" shapeId="16" clipDistance="300" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="20"/>
+            <Shape name="glas" translation="-1e-06 -0.765864 -0.458391" shapeId="17" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="26"/>
+            <Shape name="frames" translation="0.020873 -3.22969 0.027201" shapeId="18" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            <Shape name="curtains" translation="-0.008783 -0.647147 -0.460274" shapeId="19" clipDistance="75" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <Shape name="sign" translation="0.020873 -3.22969 0.027201" shapeId="20" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="22"/>
+            <TransformGroup name="seasons" nodeId="135">
+              <TransformGroup name="winter" nodeId="136">
+                <Shape name="snow" translation="-0.243773 1.44108 0.097794" shapeId="21" clipDistance="300" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="23" weatherRequiredMask="0x400"/>
+                <Shape name="icicles" translation="-0.255484 -0.6886 0.041122" shapeId="22" clipDistance="75" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="16" weatherRequiredMask="0x400"/>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="decals" nodeId="138">
-              <Shape name="concreteDecal" translation="0.020873 -3.22969 0.027201" shapeId="21" clipDistance="75" nodeId="139" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
-              <Shape name="plasterDecal" translation="0.020873 -3.22969 0.027201" shapeId="22" clipDistance="75" nodeId="140" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="19"/>
-              <Shape name="pattern" translation="0.020873 -3.22969 0.027201" shapeId="23" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="posters" translation="0.020873 -3.22969 0.027201" shapeId="24" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="9"/>
-              <Shape name="signs" translation="0.020873 -3.22969 0.027201" shapeId="25" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="21"/>
+            <TransformGroup name="decals" nodeId="139">
+              <Shape name="concreteDecal" translation="0.020873 -3.22969 0.027201" shapeId="23" clipDistance="75" nodeId="140" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+              <Shape name="plasterDecal" translation="0.020873 -3.22969 0.027201" shapeId="24" clipDistance="75" nodeId="141" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="19"/>
+              <Shape name="pattern" translation="0.020873 -3.22969 0.027201" shapeId="25" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="14"/>
+              <Shape name="posters" translation="0.020873 -3.22969 0.027201" shapeId="26" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="signs" translation="0.020873 -3.22969 0.027201" shapeId="27" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="21"/>
             </TransformGroup>
-            <TransformGroup name="interior" nodeId="144">
-              <Shape name="interior" translation="1.52282 -1.68373 3.40992" shapeId="26" clipDistance="300" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="6" weatherRequiredMask="0x40" renderInvisible="true"/>
-              <Shape name="furniture" translation="1.52138 -1.68534 3.38383" shapeId="27" clipDistance="150" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" renderInvisible="true"/>
-              <Shape name="bread" translation="1.84974 -1.9409 3.28013" shapeId="28" clipDistance="50" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="10" weatherRequiredMask="0x40" renderInvisible="true"/>
-              <Shape name="cake" translation="4.23393 -2.3615 6.00724" shapeId="29" clipDistance="50" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="11" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <TransformGroup name="interior" nodeId="145">
+              <Shape name="interior" translation="1.52282 -1.68373 3.40992" shapeId="28" clipDistance="300" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="6" weatherRequiredMask="0x40" renderInvisible="true"/>
+              <Shape name="furniture" translation="1.52138 -1.68534 3.38383" shapeId="29" clipDistance="150" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" renderInvisible="true"/>
+              <Shape name="bread" translation="1.84974 -1.9409 3.28013" shapeId="30" clipDistance="50" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="10" weatherRequiredMask="0x40" renderInvisible="true"/>
+              <Shape name="cake" translation="4.23393 -2.3615 6.00724" shapeId="31" clipDistance="50" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="11" weatherRequiredMask="0x40" renderInvisible="true"/>
             </TransformGroup>
           </Shape>
         </TransformGroup>
-        <TransformGroup name="props" nodeId="149"/>
+        <TransformGroup name="props" nodeId="150"/>
       </TransformGroup>
-      <TransformGroup name="collisions" nodeId="150">
-        <Shape name="col" shapeId="30" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="151" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
-        <Shape name="tipCollision" translation="-0.066366 0 -1.59217" shapeId="31" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="152" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+      <TransformGroup name="collisions" nodeId="151">
+        <Shape name="col" shapeId="32" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="152" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+        <Shape name="tipCollision" translation="-0.066366 0 -1.59217" shapeId="33" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="153" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
       </TransformGroup>
-      <Shape name="hh_sign" translation="1.50628 4.49882 6.58179" rotation="90 -0 -90" scale="0.54 1 0.54" shapeId="32" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="18"/>
+      <Shape name="hh_sign" translation="1.50628 4.49882 6.58179" rotation="90 -0 -90" scale="0.54 1 0.54" shapeId="34" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="18"/>
     </TransformGroup>
   </Scene>
 
