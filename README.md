@@ -1,6 +1,5 @@
-Mod Name:Hemp Production System
-
-Game: Farming Simulator 25
+Mod Name: Hemp Production System.
+Game: Farming Simulator 25.
 
 Description:
 The Hemp Production system is a comprehensive system designed around the growing and production of hemp and hemp related products. 
